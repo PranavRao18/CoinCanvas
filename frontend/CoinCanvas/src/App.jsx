@@ -1,14 +1,24 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from "react";
+
+import { BrowserRouter } from "react-router-dom";
+import './index.css';
+
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Features from "./components/Features";
+import Reviews from "./components/Reviews";
+import Footer from "./components/Footer";
 
 function App() {
 
   return (
-    <>
-      <div>Coin Canvas</div>
-    </>
+      <BrowserRouter>
+        <Navbar />
+        <Hero />
+        <Features />
+        <Reviews />
+        <Footer />
+      </BrowserRouter>
   )
 }
 
